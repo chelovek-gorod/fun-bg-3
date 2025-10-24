@@ -46,7 +46,7 @@ shuffleArray(SIZES)
 
 // cursor
 const HOVER_BRIGHTNESS_SPEED_RATE = 3
-const ACTION_RADIUS_RATE = 0.1 // 0...1
+const ACTION_RADIUS_RATE = 0.075 // 0...1
 const OUT_X = -10000, OUT_Y = -10000
 let cursorPoint = { x: OUT_X, y: OUT_Y }
 let cachedActionRadius = 0
@@ -58,12 +58,12 @@ const MAX_SIZE = 20
 const BRIGHTNESS_STEPS = 1000
 const BRIGHTNESS_MIN_SPEED = 0.0002
 const BRIGHTNESS_MAX_SPEED = 0.0003
-const CHANCE_LOW_BRIGHTNESS = 0.99975
+const CHANCE_LOW_BRIGHTNESS = 0.99987
 
 const CEIL_SIZE = MAX_SIZE + 4
 
 const darkColor = [34, 48, 69]; // #223045 - самый тусклый
-const brightColor = [38, 207, 100] // #4ade80 - самый яркий // NORMAL -> [74, 222, 128]
+const brightColor = [30, 164, 79] // #4ade80 - самый яркий // NORMAL -> [74, 222, 128]
 
 const colorPalette = new Array(BRIGHTNESS_STEPS)
 
@@ -304,4 +304,3 @@ window.addEventListener('blur', stopAnimation)
 
 resizeCanvas()
 window.addEventListener('resize', resizeCanvas)
-
