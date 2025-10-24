@@ -57,7 +57,7 @@ const MIN_SIZE = 2
 const MAX_SIZE = 20
 const BRIGHTNESS_STEPS = 1000
 const BRIGHTNESS_MIN_SPEED = 0.0002
-const BRIGHTNESS_MAX_SPEED = 0.0004
+const BRIGHTNESS_MAX_SPEED = 0.0003
 const CHANCE_LOW_BRIGHTNESS = 0.99975
 
 const CEIL_SIZE = MAX_SIZE + 4
@@ -304,3 +304,4 @@ window.addEventListener('blur', stopAnimation)
 
 resizeCanvas()
 window.addEventListener('resize', resizeCanvas)
+
