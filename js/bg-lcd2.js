@@ -45,7 +45,7 @@ function shuffleArray(array) {
 shuffleArray(SIZES)
 
 // cursor
-const HOVER_BRIGHTNESS_SPEED_RATE = 2
+const HOVER_BRIGHTNESS_SPEED_RATE = 3
 const ACTION_RADIUS_RATE = 0.1 // 0...1
 const OUT_X = -10000, OUT_Y = -10000
 let cursorPoint = { x: OUT_X, y: OUT_Y }
@@ -56,9 +56,9 @@ let cachedMinSide = 0
 const MIN_SIZE = 2
 const MAX_SIZE = 20
 const BRIGHTNESS_STEPS = 1000
-const BRIGHTNESS_MIN_SPEED = 0.0004
-const BRIGHTNESS_MAX_SPEED = 0.0007
-const CHANCE_LOW_BRIGHTNESS = 0.9995
+const BRIGHTNESS_MIN_SPEED = 0.0002
+const BRIGHTNESS_MAX_SPEED = 0.0004
+const CHANCE_LOW_BRIGHTNESS = 0.99975
 
 const CEIL_SIZE = MAX_SIZE + 4
 
